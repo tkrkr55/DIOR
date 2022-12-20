@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 
 export default function Navbar({authenticate}) {
-const menuList = ["주얼리","가방","악세사리","뉴스 및 패션쇼","기프트 이벤트"]
+const menuList = ["주얼리","가방","악세사리","뉴스 및 패션쇼"]
   
   
   const navigate = useNavigate();
