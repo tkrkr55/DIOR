@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import { Container,Row,Col } from 'react-bootstrap'
 
 export default function Home() {
  
@@ -29,15 +30,30 @@ export default function Home() {
          <hr></hr>
         {/* 하단 1-1 */}
         <div className='gift_bg'>
-          <div className='gift_box'>
+        <Container>
+            <Row>
+              <Col lg={6}>
+              <div className='gift_box' style={{width:'100%'}}> 
             <h3> 우아하게 전하는 제품</h3>
             <p>함께 나누는 순간의 마법을 기념하기 위해 정성스럽게 제작된 Dior 기프트 세트는 Dior의 꿈의 중심에 있는 선물과 기쁨의 예술에 경의를 표하며 가장 소중한 애정 어린 순간을 기립니다. </p>
             <button className='btn'> 감상하기 </button>
           </div>
-          <img src='https://www.dior.com/couture/var/dior/storage/images/38584670/5-kor-KR/column-23_1440_1200.jpg?imwidth=960' alt=''></img>
+              </Col>
+              <Col lg={6}>
+                <div className='gift_boxs'>
+              <img style={{width:'100%'}} src='https://www.dior.com/couture/var/dior/storage/images/38584670/5-kor-KR/column-23_1440_1200.jpg?imwidth=960' alt=''></img>
+              </div>
+              </Col>
+
+            </Row>
+           
+          </Container>
+          
+          
         </div>
 
         <div className='foolt'>
+        
           <p>
           크리스챤디올꾸뛰르코리아주식회사 | 04539 서울특별시 중구 을지로5길 19, 26층(수하동) | 사업자등록번호: 120-81-74197 <br/>
 대표자: 트렁히엔트란, Khong May Wan Sharon | 통신판매업 <br/>

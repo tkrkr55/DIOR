@@ -183,11 +183,12 @@ hr{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin:100px;
+
   padding: 50px;
+  min-width: 400px;
   border-bottom:1px solid lightgray;
-  border-top:1px solid lightgray
-  
+  border-top:1px solid lightgray;
+  margin: 50px 0;
   
 }
 .product_title h3{
@@ -196,6 +197,7 @@ hr{
 }
 .product_title p {
   text-align: center;
+
 }
 .productItem{
   cursor:pointer;
@@ -259,4 +261,30 @@ hr{
   width: 100%;
   font-size: 0.9em;
   text-decoration: underline;
+}
+.bag_list {
+ 
+}
+.bag_list img{
+  width: 100%
+}
+
+@media screen and (max-width:1070px){
+
+  .input_box{
+    top:200px;
+    transition: 1s;
+  }
+
+video{
+  margin-top:70px;
+  transition: 1s;
+ 
+}
+
+}
+
+.로딩중{
+  display: flex;
+  justify-content: center;
 }

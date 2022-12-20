@@ -5,6 +5,7 @@ import Login from './page/Login';
 import ProductDetail from './page/ProductDetail';
 import Navbar from './component/Navbar';
 import Home from './page/Home';
+import News from './page/News';
 import Product from './page/Product';
 import Product_ac from './page/Product_ac';
 import Product_bag from './page/Product_bag';
@@ -28,14 +29,16 @@ function App() {
   },[authenticate])
   return (
     <div >
-      <Navbar/>
+      <Navbar authenticate={authenticate}/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path="/product" element={<Product/>}></Route>
         <Route path="/productBAG" element={<Product_bag/>}></Route>
         <Route path="/productAC" element={<Product_ac/>}></Route>
+        <Route path="/news" element={<News/>}></Route>
         <Route path='/login' element={<Login setAuthentifate={setAuthentifate}/>}></Route>
         <Route path='/product/:id' element={<PrivateRoute authenticate={authenticate}/>}></Route>
+      
       </Routes>
     </div>
   );
